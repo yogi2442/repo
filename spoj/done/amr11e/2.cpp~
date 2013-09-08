@@ -1,0 +1,14 @@
+#include <cstdio>
+
+int main()
+{
+	int t,u,n;
+	int A[1000] = {};
+	scanf("%d",&t);
+	for(u=0;u<t;u++)
+	{
+		scanf("%d",&n);
+		printf("%d\n",A[n-1]);
+	}
+	return 0;
+}

@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+	int A[99];
+	int i,j,k,l,count,count1=1001,s;
+
+	for(i=30;i<5000;i++)
+	{
+		count = 0;
+		for(j=2;j<=100;j++)
+		{
+			if(i%j == 0 && A[j] == 1)
+			{
+				count++;
+				if(count >= 3)
+					break;
+			}
+		}
+		if(count >= 3)
+		{
+			count1--;
+			printf("%d\n",i);
+		}
+		if(count1 == 0)
+			break;
+	}
+	return 0;
+}

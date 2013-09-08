@@ -1,0 +1,19 @@
+#include <cstdio>
+
+int main()
+{
+	int num[] = {};
+	int test,u,n,m,i,count;
+	scanf("%d",&test);
+	for(u=0;u<test;u++)
+	{
+		scanf("%d%d",&n,&m);
+		count=0;
+		for(i=0;i<37;i++)
+		{
+			if(num[i] >= n && num[i] <= m)
+				count++;
+		}
+		printf("%d\n",count);
+	}
+}
